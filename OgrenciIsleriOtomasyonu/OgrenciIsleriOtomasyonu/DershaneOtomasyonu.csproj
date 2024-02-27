@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{55BBF1DC-F01F-4226-A1B5-6BCDB3CCB415}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>OgrenciIsleriOtomasyonu</RootNamespace>
+    <AssemblyName>OgrenciIsleriOtomasyonu</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationManifest>app4.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CircularProgressBar, Version=2.8.0.16, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
+      <HintPath>..\packages\CircularProgressBar.2.8.0.16\lib\net40\CircularProgressBar.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WinFormAnimation, Version=1.6.0.4, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
+      <HintPath>..\packages\WinFormAnimation.1.6.0.4\lib\net40\WinFormAnimation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Boş_DoluEtüt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Boş_DoluEtüt.Designer.cs">
+      <DependentUpon>Boş_DoluEtüt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cikis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cikis.Designer.cs">
+      <DependentUpon>Cikis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giris.Designer.cs">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sifre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sifre.Designer.cs">
+      <DependentUpon>Sifre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnaMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaMenu.Designer.cs">
+      <DependentUpon>AnaMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EtutAlma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EtutAlma.Designer.cs">
+      <DependentUpon>EtutAlma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OgrenciBilgileri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgrenciBilgileri.Designer.cs">
+      <DependentUpon>OgrenciBilgileri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OgretmenBilgileri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgretmenBilgileri.Designer.cs">
+      <DependentUpon>OgretmenBilgileri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Veli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Veli.Designer.cs">
+      <DependentUpon>Veli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VeliGirisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VeliGirisi.Designer.cs">
+      <DependentUpon>VeliGirisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Öğrenci.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Öğrenci.Designer.cs">
+      <DependentUpon>Öğrenci.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Öğretmen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Öğretmen.Designer.cs">
+      <DependentUpon>Öğretmen.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Boş_DoluEtüt.resx">
+      <DependentUpon>Boş_DoluEtüt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cikis.resx">
+      <DependentUpon>Cikis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Giris.resx">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sifre.resx">
+      <DependentUpon>Sifre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnaMenu.resx">
+      <DependentUpon>AnaMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EtutAlma.resx">
+      <DependentUpon>EtutAlma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OgrenciBilgileri.resx">
+      <DependentUpon>OgrenciBilgileri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OgretmenBilgileri.resx">
+      <DependentUpon>OgretmenBilgileri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Veli.resx">
+      <DependentUpon>Veli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VeliGirisi.resx">
+      <DependentUpon>VeliGirisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Öğrenci.resx">
+      <DependentUpon>Öğrenci.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Öğretmen.resx">
+      <DependentUpon>Öğretmen.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="app.manifest" />
+    <None Include="app1.manifest" />
+    <None Include="app2.manifest">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="app3.manifest" />
+    <None Include="app4.manifest" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PROJE.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\istockphoto-1328847023-612x612.jpg" />
+    <None Include="Resources\indir %285%29.jpg" />
+    <None Include="Resources\indir %288%29.jpg" />
+    <None Include="Resources\indir %282%29.jpeg" />
+    <None Include="Resources\istockphoto-978988748-612x612.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
